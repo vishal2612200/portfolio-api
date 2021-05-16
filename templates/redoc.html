@@ -1,0 +1,5 @@
+{% extends 'redocbase.html' %}
+
+{% block redoc %}
+    <redoc spec-url='{% url schema_url %}'></redoc>
+{% endblock redoc %}
