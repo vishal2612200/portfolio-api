@@ -39,6 +39,7 @@ Heroku
 ## Test Credits
 
 <b> Username: </b> vishal
+
 <b> Password: </b> 123456
 
 ## How to Create virtual env
@@ -81,29 +82,29 @@ If you want to run this project on localhost, then comment production database s
 
 ## Admin area
 
-You can access django admin area by adding '/admin/' to host url, e.g 'https://<domain_name>/admin/'
+You can access django admin area by given url
+
+URL: 'https://testportfolioapp.herokuapp.com/admin/'
 
 
 ## Test Command
 
 Test folder structure:
 
-
+```
 - trade
   -- tests
     --- __init__.py
     --- test_login.py
     --- test_model.py
     --- test_restapi.py
-
+```
 
 Total unit test case: 9
 
 
 ```
-
 python manage.py test
-
 ```
 
 ## Note
