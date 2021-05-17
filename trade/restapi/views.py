@@ -33,7 +33,11 @@ class PortfolioList(ListAPIView):
     # comment above queryset line number 27
 
     # def get_queryset(self):
-    #     userid = self.request.query_params.get('userid', 1)
+    #     # it will be request user id not get user id request, as 
+    #     # portfoliolist information is user personal information that 
+    #     # should be accessed through jwt token or other authentication method.
+    
+    #     userid = self.request.user.id
     #     if userid:
     #         return Portfolio.objects.select_related('shareholder')\
     #             .filter(shareholder = userid).values()
